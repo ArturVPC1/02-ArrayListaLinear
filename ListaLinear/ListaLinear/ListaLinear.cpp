@@ -88,6 +88,25 @@ void exibirElementos()
 		}
 	}
 }
+//AQUI QUE É PRA MUDAR
+void buscarElemento() {
+	int num, achei = 0, posicao;
+	//achei é pra ver se achou ou não, será 1 se achar
+	cout << "Digita ai o numero \n";
+	cin >> num;
+
+	for (int n = 0; n <= nElementos; n++) {
+		if (lista[n] == num) {
+			achei = 1;
+			posicao = n + 1;
+			cout << "Numero esta na posicao: " << posicao << endl;
+		}
+	}
+	if (achei == 0) {
+		cout << "nao achei :( " << endl;
+	}
+}
+//AQUI QUE É PRA MUDAR
 
 void inserirElemento()
 {
@@ -99,11 +118,5 @@ void inserirElemento()
 	else {
 		cout << "Lista cheia";
 	}
-
-}
-
-// deve ser implementada como resposta ao exercicio
-void buscarElemento()
-{
 
 }
